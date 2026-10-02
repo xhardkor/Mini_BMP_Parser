@@ -1,0 +1,21 @@
+#ifndef MAIN_HEADER
+#define MAIN_HEADER
+
+typedef enum {
+  EXIT_OK = 0,
+  NO_ERROR,
+  ERROR_NO_FILES,
+  ERROR_FILE_DOESNT_EXIST,
+  ERROR_DIFFERENT_SIZE,
+  ERROR_NOT_BMP_TYPE,
+  ERROR_DIF_MODE,
+  ERROR_UNSUPPORTED_BITMAP,
+} ErrorCodes;
+
+
+typedef enum {
+  READ_MODE = 0,
+  WRITE_MODE,
+} HeaderModes;
+
+#endif
